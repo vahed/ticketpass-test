@@ -2,6 +2,9 @@
 
 This project is a nearly default Laravel installation created with some missing functionality just so we can get a practical look in to your coding style and proficiency whilst also allowing pretty much any freedoms to take the tasks how you see fit. To make it more appropriate to Ticketpass, I have used [InertiaJS](https://inertiajs.com) for the frontend which is a library for creating an SPA experience from a Laravel project using VueJS.
 
+## Submitting
+Please fork the project and commit the changes to your own repository. This repo is only for getting the initial project and task. Once you have completed the tasks, please email a link to the repository to either Rodrigo or myself.
+
 ## Task
 
 ### Finish the authentication system.
@@ -32,10 +35,13 @@ yarn run watch-poll
 Now you should be good to go.
 
 ## Contact
-If you have any questions about the project or tasks, please reach out to me at rob@ticketpass.org and I will get back to you ASAP.
+If you have any questions about the project or tasks, please reach out to me at [rob@ticketpass.org]([mailto:rob@ticketpass.org) and I will get back to you ASAP.
 
 ## Links
 [Laravel Docs](https://laravel.com/docs/7.x)
+
 [InertiaJS Docs](https://inertiajs.com)
+
 [VueJS Docs](https://vuejs.org/v2/guide/)
+
 [HaveIBeenPwned API](https://haveibeenpwned.com/API/v2)
