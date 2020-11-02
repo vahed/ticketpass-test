@@ -11,14 +11,14 @@ When submitting your finished tasks, please ensure to fork this repo and commit 
 Right now there is a very basic login/registration page set up with the appropriate fields needed for the user. The first task will be to finish the methods on the frontend for both registration and login (This form can be found at `resources/js/pages/auth/Login.vue`) and their respective functions on the `AuthenticationController` (found at `app/Http/Controllers/AuthenicationController`). The routes should allow you to reach the home page upon successful login where your authenticated user information should be dumped out on the page.
 
 ### HaveIBeenPwned password checking implementation.
-There is a service that I have long wanted to implement in to Ticketpass which allows us to see if the password being provided by the user has been part of a publicly known data breach. This API can be found [here](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange).
+HaveIBeenPwned is a public, free service which tracks password leaks from breached websites. Whilst providing a way to check your own email address on their website, they also offer an API which we have long considered as something to implement for Ticketpass. By securely providing only a piece of the hashed password, the API lets you check if it has been part of a previous leak. This API can be found [here](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange) and provides the details required to send the request and parse the results.
 
 The task for this one is to implement a check to this API for both newly registering users and those who are returning. If the password provided has been part of a breach we can take action early.
 
 * If the user is just registering, we can reject the password and tell them to pick a better one.
 * If the user is logging in, we can make them aware that their password is not very secure and recommend a password change.
 
-You do not need to provide a way for them to actually change their password, adding some kind of alert to the page is sufficient. The task is more about the implementation of the service and making use of the response.
+You do not need to provide a way for them to actually change their password, adding some kind of alert to the page is sufficient. The task is more about the implementation of the service and parsing of the response.
 
 ## Installation of Base Project
 Once you have downloaded the project you will need to make your `.env` with the settings required, you can grab the variables from `.env.example`. For this project I have gone with sqlite to make it a bit easier to package up however if you would like to use MySQL, PostgreSQL or something else then that is no problem.
