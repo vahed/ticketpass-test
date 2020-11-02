@@ -1,11 +1,11 @@
 # Ticketpass Test Project
 
-This project is a nearly default Laravel installation created with some missing functionality just so we can get a practical look in to your coding style and proficiency whilst also allowing pretty much any freedoms to take the tasks how you see fit. To make it more appropriate to Ticketpass, I have used [InertiaJS](https://inertiajs.com) for the frontend which is a library for creating an SPA experience from a Laravel project using VueJS.
+This project is a nearly default Laravel installation created with some missing functionality just so we can get a practical look in to your coding style and proficiency whilst also giving you freedom to approach the tasks  how you see fit. To make it more appropriate to the Ticketpass product, this project is using [InertiaJS](https://inertiajs.com), a library for creating an SPA experience from a Laravel project using VueJS for the frontend.
 
 ## Submitting
-Please fork the project and commit the changes to your own repository. This repo is only for getting the initial project and task. Once you have completed the tasks, please email a link to the repository to either Rodrigo or myself.
+When submitting your finished tasks, please ensure to fork this repo and commit your changes there. This repo is only for getting the initial project and task descriptions. Once you have completed the tasks, please email a link to the repository to either Rodrigo or myself.
 
-## Task
+## Tasks
 
 ### Finish the authentication system.
 Right now there is a very basic login/registration page set up with the appropriate fields needed for the user. The first task will be to finish the methods on the frontend for both registration and login (This form can be found at `resources/js/pages/auth/Login.vue`) and their respective functions on the `AuthenticationController` (found at `app/Http/Controllers/AuthenicationController`). The routes should allow you to reach the home page upon successful login where your authenticated user information should be dumped out on the page.
