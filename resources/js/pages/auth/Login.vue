@@ -16,7 +16,7 @@
             <b-field label="Password">
                 <b-input type="password" v-model="password" password-reveal required />
             </b-field>
-            
+
             <b-field v-if="registering">
                 <b-checkbox v-model="tos_accept" required>
                     I accept terms and conditions
@@ -48,6 +48,7 @@ export default {
         }
     },
     methods: {
+        /* test */
         registerUser() {
             // this.$inertia.post(
             //     $route('auth.register'), {
