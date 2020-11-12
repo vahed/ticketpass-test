@@ -1,0 +1,13 @@
+p.alert.alert-danger{
+    color: crimson;
+}
+
+p.alert.alert-success{
+    color: green;
+}
+
+h3.is-center{
+    color: brown;
+    text-align: center;
+    margin-top: 2rem;
+}

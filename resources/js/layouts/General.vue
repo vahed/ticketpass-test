@@ -11,7 +11,7 @@
 
             <template slot="end">
                 <b-navbar-item tag="div">
-                    <inertia-link :href="$route('auth.logout')" method="post" v-if="$page.auth.user">
+                    <inertia-link :href="$route('auth.logout')" method="post" v-if="$page.user">
                         <b-button type="is-info is-light">Logout</b-button>
                     </inertia-link>
                     <inertia-link :href="$route('auth')" method="post" v-else>
@@ -29,7 +29,10 @@
 
 <script>
 export default {
-    //
+    props: {
+        user: Object,
+        auth: Object,
+    },
 }
 </script>
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc559c9799c5e8d60a9801ff154ad60c",
+    "content-hash": "0043d869464f68013dc6d4b5a792a37c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1692,6 +1692,53 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2018-07-02T15:55:56+00:00"
+        },
+        {
+            "name": "payfast/laravel-validate-pwned-password",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PayFast/laravel-validate-pwned-password.git",
+                "reference": "31edc4dcd94d5113b3c9a915cbee55990a6b79b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PayFast/laravel-validate-pwned-password/zipball/31edc4dcd94d5113b3c9a915cbee55990a6b79b8",
+                "reference": "31edc4dcd94d5113b3c9a915cbee55990a6b79b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PayFast\\Providers\\PwnedPasswordServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PayFast\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Charl Retief",
+                    "email": "charl.retief@payfast.co.za"
+                }
+            ],
+            "description": "Adds Laravel validator rule to check if a password has been pwned from https://haveibeenpwned.com/API/v2",
+            "support": {
+                "issues": "https://github.com/PayFast/laravel-validate-pwned-password/issues",
+                "source": "https://github.com/PayFast/laravel-validate-pwned-password/tree/1.0"
+            },
+            "time": "2018-07-20T12:55:55+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4705,6 +4752,78 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
+            "name": "ubient/laravel-pwned-passwords",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ubient/laravel-pwned-passwords.git",
+                "reference": "8cbd121cab4a92397a43e3a76b99852b94723ae6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ubient/laravel-pwned-passwords/zipball/8cbd121cab4a92397a43e3a76b99852b94723ae6",
+                "reference": "8cbd121cab4a92397a43e3a76b99852b94723ae6",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3|^7.0.1",
+                "illuminate/contracts": "^5.8|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ubient\\PwnedPasswords\\PwnedPasswordsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ubient\\PwnedPasswords\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Claudio Dekker",
+                    "email": "claudio@ubient.net",
+                    "homepage": "https://ubient.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel validation rule to determine whether a given password is pwned (insecure)",
+            "homepage": "https://github.com/ubient/laravel-pwned-passwords",
+            "keywords": [
+                "haveibeenpwned",
+                "laravel",
+                "laravel-pwned-passwords",
+                "password",
+                "password-safety",
+                "ubient",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/ubient/laravel-pwned-passwords/issues",
+                "source": "https://github.com/ubient/laravel-pwned-passwords/tree/3.3.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/claudiodekker",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-01T16:37:04+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v4.1.8",
             "source": {
@@ -7074,7 +7193,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2.5"
+        "php": "^7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
